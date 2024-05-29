@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Denúncia - Ativo e Operante!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ativo e Operante!</h1>
+    </header>
+
+    <main>
+        <section id="denuncia">
+            <h2>Registrar Denúncia</h2>
+            <form id="denunciaForm">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+                <label for="urgencia">Urgência:</label>
+                <input type="number" id="urgencia" name="urgencia" min="1" max="5" required>
+                <label for="orgao">Orgão Competente:</label>
+                <select id="orgao" name="orgao" required></select>
+                <label for="tipoProblema">Tipo de Problema:</label>
+                <select id="tipoProblema" name="tipoProblema" required></select>
+                <label for="imagem">Imagem:</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*">
+                <button type="submit">Enviar Denúncia</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ativo e Operante!</p>
+    </footer>
+</body>
+</html>
